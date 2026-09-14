@@ -1,0 +1,65 @@
+/* Hero polish: denser, bolder, no collisions */
+.hero{min-height:760px!important;padding-top:62px!important;padding-bottom:58px!important;display:block!important}
+.hero-grid{grid-template-columns:minmax(0,1.65fr) minmax(360px,.72fr)!important;gap:4vw!important;align-items:start!important}
+.hero h1{font-weight:600!important;font-size:clamp(72px,7.45vw,124px)!important;line-height:.86!important;letter-spacing:-.075em!important;max-width:940px!important;margin-top:14px!important}
+.hero h1 em{font-weight:500!important}
+.hero-side{margin-top:74px!important;padding:30px 32px!important;max-width:430px!important;justify-self:end!important;position:relative!important;z-index:8!important;background:rgba(243,240,232,.92)!important;box-shadow:0 18px 55px rgba(17,18,15,.09)!important}
+.hero-side p{font-size:21px!important;line-height:1.42!important;font-weight:500!important;margin:0!important}
+.hero-actions{margin-top:24px!important;gap:16px!important;flex-wrap:wrap!important}
+.hero-actions .pill-link{font-weight:700!important;padding:14px 21px!important}
+.hero-actions .text-link{font-weight:700!important}
+.hero:before{right:-2vw!important;top:4vh!important;width:min(38vw,610px)!important;height:72vh!important;opacity:.92!important}
+.hero:after{right:31vw!important;top:34vh!important;width:150px!important;height:205px!important;opacity:.95!important}
+.hero-orbit{width:245px!important;height:245px!important;right:6vw!important;bottom:92px!important;background:rgba(243,240,232,.91)!important;z-index:7!important}
+.hero-orbit:before{inset:34px!important}.hero-orbit:after{inset:68px!important}
+.orbit-center{width:72px!important;height:72px!important;font-size:19px!important}
+.orbit-copy{display:none!important}
+.orb-a{top:37px!important;right:25px!important}.orb-b{bottom:28px!important;left:30px!important}.orb-c{top:108px!important}
+.hero-strip{bottom:26px!important;width:58%!important;gap:7px!important}
+.hero-strip a{font-size:12px!important;font-weight:600!important;padding:9px 14px!important;background:rgba(243,240,232,.92)!important}
+.scroll-cue{bottom:82px!important;font-weight:700!important;letter-spacing:1.3px!important}
+.eyebrow{font-size:12px!important;font-weight:800!important;letter-spacing:2.3px!important}
+
+/* Stronger typography across the first screen transition */
+.intro h2,.services h2,.nexus h2,.approach h2,.work h2,.industries h2,.insights h2{font-weight:600!important}
+.intro-copy p,.section-title-row>p{font-weight:500!important}
+
+@media(max-width:1250px){
+  .hero-grid{grid-template-columns:minmax(0,1.55fr) minmax(330px,.72fr)!important;gap:3vw!important}
+  .hero h1{font-size:clamp(68px,7vw,108px)!important}
+  .hero-side{max-width:390px!important}
+  .hero-orbit{right:4vw!important}
+}
+
+@media(max-width:1050px){
+  .hero{min-height:820px!important}
+  .hero-grid{grid-template-columns:1fr!important}
+  .hero h1{max-width:900px!important;font-size:clamp(66px,9vw,102px)!important}
+  .hero-side{margin-top:30px!important;justify-self:start!important;max-width:560px!important}
+  .hero:before{width:52vw!important;right:-10vw!important;opacity:.5!important}
+  .hero:after{display:none!important}
+  .hero-orbit{right:5vw!important;bottom:74px!important}
+  .hero-strip{width:62%!important}
+}
+
+@media(max-width:900px){
+  .hero{min-height:860px!important;padding-top:54px!important}
+  .hero h1{font-size:clamp(58px,12vw,88px)!important}
+  .hero-side{margin-top:24px!important;padding:24px!important}
+  .hero-side p{font-size:19px!important}
+  .hero-orbit{width:205px!important;height:205px!important;bottom:48px!important}
+  .hero-orbit:before{inset:28px!important}.hero-orbit:after{inset:56px!important}
+  .hero-strip,.scroll-cue{display:none!important}
+}
+
+@media(max-width:560px){
+  .hero{min-height:790px!important;padding-top:42px!important;padding-bottom:32px!important}
+  .hero h1{font-size:52px!important;line-height:.9!important}
+  .hero-side{margin-top:20px!important;max-width:100%!important}
+  .hero-side p{font-size:18px!important}
+  .hero-actions{flex-direction:column!important;align-items:flex-start!important}
+  .hero:before{width:95vw!important;height:320px!important;bottom:0!important;top:auto!important;right:-24vw!important}
+  .hero-orbit{width:170px!important;height:170px!important;right:5vw!important;bottom:25px!important}
+  .hero-orbit:before{inset:23px!important}.hero-orbit:after{inset:46px!important}
+  .orbit-center{width:52px!important;height:52px!important;font-size:14px!important}
+}
